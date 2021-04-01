@@ -2,6 +2,17 @@ $dark-blue: hsl(240, 38%, 20%);
 $grayish-blue: hsl(240, 18%, 77%);
 
 // 375 px
+.page{
+    min-width: 100vh;
+
+    // layout
+    display: grid;
+    grid-template-columns: minmax( min-content, 100vw) ;
+    grid-template-rows: min-content 1fr 1fr;
+    &__pattern-bg{
+        max-width: 100vw;
+    }
+}
 .testimonials{
     font-size: 3.2rem;
 }
