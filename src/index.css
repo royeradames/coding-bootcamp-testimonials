@@ -1,9 +1,16 @@
 /* bring in normalize css styles */
 @import-sanitize; 
 
+/* import font family */
+@font-face{
+    font-family: "Inter";
+    src: url("./testimonials-css/Inter.ttf");
+}
+
 html{
   font-size: 10px;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 *, *:before, *:after{
