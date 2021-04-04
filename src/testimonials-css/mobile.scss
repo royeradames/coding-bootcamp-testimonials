@@ -14,8 +14,7 @@ $grayish-blue: hsl(240, 18%, 77%);
     background-image: url("../images/pattern-bg.svg"), url("../images/pattern-quotes.svg"), url("../images/pattern-curve.svg");
     background-repeat: no-repeat;
     background-size: 32rem, 7rem;
-    // 45% desktop for curve, 72% mobile
-    background-position: 50% 10%, 50% 65%, 0% 100%;
+    background-position: 50% 10%, 50% 65%, bottom left;
 
     // temporary
         min-height: 100vh;
