@@ -18,35 +18,27 @@ function App() {
             alt="portrait of Tanya Sinclair"
             className="testimonial__img"
           />
-          <div className="testimonial__prev--background">
-            <svg
-              className="testimonial__prev"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="18"
-            >
-              <path
-                fill="none"
-                stroke="#8585AC"
-                stroke-width="3"
-                d="M11 1L3 9l8 8"
-              />
-            </svg>
-          </div>
-          <div className="testimonial__next--background">
-            <svg
-              className="testimonail__next"
-              xmlns="http://www.w3.org/2000/svg"
-              width="13"
-              height="18"
-            >
-              <path
-                fill="none"
-                stroke="#8585AC"
-                stroke-width="3"
-                d="M2 1l8 8-8 8"
-              />
-            </svg>
+          <div className="testimonial__slider-control">
+            <button className="tesetimonial__prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+                <path
+                  fill="none"
+                  stroke="#8585AC"
+                  stroke-width="3"
+                  d="M11 1L3 9l8 8"
+                />
+              </svg>
+            </button>
+            <button className="tesetimonial__next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+                <path
+                  fill="none"
+                  stroke="#8585AC"
+                  stroke-width="3"
+                  d="M2 1l8 8-8 8"
+                />
+              </svg>
+            </button>
           </div>
         </header>
         <p className="testimonial__message">

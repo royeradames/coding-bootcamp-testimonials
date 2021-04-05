@@ -16,21 +16,30 @@ $grayish-blue: hsl(240, 18%, 77%);
     background-image: url("../images/pattern-quotes.svg"), url("../images/pattern-bg.svg"),  url("../images/pattern-curve.svg");
     background-repeat: no-repeat;
     background-size: 7rem, 90% 49%,  69% 12%;
-    background-position: 50% 65%,50% 10%,  bottom left;
+    background-position: 50% 65%,50% 0%,  bottom left;
 
     // layout
     display: grid;
     grid-template-columns: 2rem 1fr 2rem;
-    grid-template-rows: min-content min-content min-content;
+    grid-template-rows: 3rem min-content min-content min-content 11rem;
     grid-template-areas: 
+        ". . ."
         ". header ."
         ". message ."
         ". footer ."
+        ". . ."
     ;
 
     // header content
     &__header{
         grid-area: header;
+        justify-self: center;
+
+    }
+    &__img{
+        max-width: 28rem;
+        box-shadow: 0 2rem 3rem hsla(240, 18%, 77%, 0.3);
+        border-radius: .5rem;
     }
 
     // article body content
