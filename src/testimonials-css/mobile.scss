@@ -3,11 +3,14 @@ $grayish-blue: hsl(240, 18%, 77%);
 
 // 375 px
 .page{
-    min-height: 100vh;
-
-    
+    // min-height: 100vh;
+    // background-color: $grayish-blue;
 }
+
 .testimonial{
+    &--hide-content{
+        display: none;
+    }
     // fluit typography
     font-size: clamp(1.8rem, 3vw, 3.2rem);
     line-height: clamp( 2.4rem, 4vw, 4.4rem);
@@ -15,8 +18,8 @@ $grayish-blue: hsl(240, 18%, 77%);
     // background images
     background-image: url("../images/pattern-quotes.svg"), url("../images/pattern-bg.svg"),  url("../images/pattern-curve.svg");
     background-repeat: no-repeat;
-    background-size: 7rem, 90% 49%,  69% 12%;
-    background-position: 50% 65%,50% 0%,  bottom left;
+    background-size: 5rem, 90% 49%,  69% 12%;
+    background-position: 50% 54%,50% 0%,  bottom left;
 
     // layout
     display: grid;
@@ -40,6 +43,36 @@ $grayish-blue: hsl(240, 18%, 77%);
         max-width: 28rem;
         box-shadow: 0 2rem 3rem hsla(240, 18%, 77%, 0.3);
         border-radius: .5rem;
+    }
+    &__slider-control{
+        display: flex;
+        justify-content: center;
+    }
+    &__slide-control-button{
+        border: none;
+        background-color: white;
+        width: 4rem;
+        height: 4rem;
+        box-shadow: 0 1rem 3rem hsla(240, 18%, 77%, 0.3);
+
+        // change cursor to reflex that the buttons are clickable
+        cursor: pointer;
+
+        // move the buttons on top of othe image
+        position: relative;
+        bottom: 2.2rem;
+        &:active{
+            transform: scale(0.9);
+        }
+        &:hover{
+            background-color: #eeeeff;
+        }
+    }
+    &__prev{
+        border-radius: 2rem 0 0 2rem;
+    }
+    &__next{
+        border-radius: 0 2rem 2rem 0;
     }
 
     // article body content
@@ -65,4 +98,8 @@ $grayish-blue: hsl(240, 18%, 77%);
         color: $grayish-blue;
     }
 
+}
+
+.slider{
+    display: none;
 }
