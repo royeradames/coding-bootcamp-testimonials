@@ -4,10 +4,13 @@ $grayish-blue: hsl(240, 18%, 77%);
 // 375 px
 .page{
     min-height: 100vh;
-    // background-color: $grayish-blue;
+    background-color: #F0F0F0;
 }
-
 .testimonial{
+    background-color: white;
+    color: $dark-blue;
+    max-width: 144rem;
+    margin: 0 auto;
     // fluit typography
     font-size: clamp(1.8rem, 3vw, 3.2rem);
     line-height: clamp( 2.4rem, 4vw, 4.4rem);
@@ -77,13 +80,13 @@ $grayish-blue: hsl(240, 18%, 77%);
         margin: 2rem 0;
         grid-area: message;
         text-align: center;
-        color: $grayish-blue;
     }
 
     // footer content
     &__footer{
         grid-area: footer;
         text-align: center;
+        font-size: clamp(1.5rem, 2vw, 2rem);
     }
     &__name{
         margin: 0;
