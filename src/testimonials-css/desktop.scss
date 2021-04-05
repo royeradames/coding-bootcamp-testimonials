@@ -29,6 +29,8 @@ $grayish-blue: hsl(240, 18%, 77%);
         &__slide-control-button{
             // move slider button to the left side
             right: 18rem;
+            height: 5.6rem;
+            width: 5.6rem;
         }
         // article body content
         &__message{
