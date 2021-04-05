@@ -11,10 +11,10 @@ $grayish-blue: hsl(240, 18%, 77%);
     font-size: 3.2rem;
 
     // background images
-    background-image: url("../images/pattern-bg.svg"), url("../images/pattern-quotes.svg"), url("../images/pattern-curve.svg");
+    background-image: url("../images/pattern-quotes.svg"), url("../images/pattern-bg.svg"),  url("../images/pattern-curve.svg");
     background-repeat: no-repeat;
-    background-size: 32rem, 7rem;
-    background-position: 50% 10%, 50% 65%, bottom left;
+    background-size: 7rem, 90% 49%,  69% 12%;
+    background-position: 50% 65%,50% 10%,  bottom left;
 
     // temporary
         min-height: 100vh;

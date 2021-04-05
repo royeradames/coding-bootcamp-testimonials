@@ -1,6 +1,7 @@
 import React from "react";
 import "./testimonials-css/mobile.scss";
 import "./testimonials-css/desktop.scss";
+import "./testimonials-css/desktop.scss";
 
 function App() {
   return (
