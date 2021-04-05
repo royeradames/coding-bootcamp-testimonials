@@ -8,7 +8,9 @@ $grayish-blue: hsl(240, 18%, 77%);
     
 }
 .testimonial{
-    font-size: 3.2rem;
+    // fluit typography
+    font-size: clamp(1.8rem, 3vw, 3.2rem);
+    line-height: clamp( 2.4rem, 4vw, 4.4rem);
 
     // background images
     background-image: url("../images/pattern-quotes.svg"), url("../images/pattern-bg.svg"),  url("../images/pattern-curve.svg");
@@ -16,6 +18,42 @@ $grayish-blue: hsl(240, 18%, 77%);
     background-size: 7rem, 90% 49%,  69% 12%;
     background-position: 50% 65%,50% 10%,  bottom left;
 
-    
+    // layout
+    display: grid;
+    grid-template-columns: 2rem 1fr 2rem;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas: 
+        ". header ."
+        ". message ."
+        ". footer ."
+    ;
+
+    // header content
+    &__header{
+        grid-area: header;
+    }
+
+    // article body content
+    &__message{
+        margin: 2rem 0;
+        grid-area: message;
+        text-align: center;
+        color: $grayish-blue;
+    }
+
+    // footer content
+    &__footer{
+        grid-area: footer;
+        text-align: center;
+    }
+    &__name{
+        margin: 0;
+        color: $dark-blue;
+        font-weight: bold;
+    }
+    &__degree{
+        margin: 0;
+        color: $grayish-blue;
+    }
 
 }

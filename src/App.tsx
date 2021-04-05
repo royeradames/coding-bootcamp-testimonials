@@ -74,7 +74,7 @@ function App() {
           feel so confident about starting up as a professional developer. ”
         </p>
 
-        <footer className="testminonial__footer">
+        <footer className="testimonial__footer">
           <p className="testminoial__name">John Tarkpor</p>
           <p className="testimonial__degree">Junior Front-end Developer</p>
         </footer>
