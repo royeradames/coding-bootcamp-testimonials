@@ -3,14 +3,11 @@ $grayish-blue: hsl(240, 18%, 77%);
 
 // 375 px
 .page{
-    // min-height: 100vh;
+    min-height: 100vh;
     // background-color: $grayish-blue;
 }
 
 .testimonial{
-    &--hide-content{
-        display: none;
-    }
     // fluit typography
     font-size: clamp(1.8rem, 3vw, 3.2rem);
     line-height: clamp( 2.4rem, 4vw, 4.4rem);
