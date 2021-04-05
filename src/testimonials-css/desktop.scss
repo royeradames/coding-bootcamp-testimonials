@@ -9,5 +9,31 @@ $grayish-blue: hsl(240, 18%, 77%);
         background-size: 6%, 37%,  auto;
         background-position: 18% 23%, 91% 39%, bottom left;
 
+        // desktop layout
+        grid-template-columns: 5rem min-content 5rem 1fr 5rem;
+        grid-template-rows: 5rem min-content min-content min-content 16rem;
+        grid-template-areas: 
+            ". . . . ."
+            ". message message header ."
+            ". message message header."
+            ". footer . . ."
+            ". . . . ."
+        ;
+
+        // article body content
+        &__message{
+            text-align: left;
+        }
+
+        // footer content
+        &__footer{
+            text-align: left;
+            display: flex;
+            width: max-content;
+        }
+        &__degree{
+            margin-left: 1.5rem;
+        }
+
     }
 }
